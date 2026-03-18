@@ -1,33 +1,59 @@
 import java.util.Arrays;
 public class ArrayFunction{
-int length = 5;
-    int newArray = new int [numbers.length]
 
-for(int count = 0;count < numbers.length;count++){
-    if(numbers[count] <= length){
-            numbers[count] = length;
 
-        }
-//
-//
 
-   
+    public static int [] number(int[] num){
 
-}
+    int newArray [] = new int [num.length];
+
+
+    for(int count = 0;count < newArray.length;count++){
+
+    newArray[count] = num[count];
+
+
+    if( num[count] > newArray[count]){
+     num[count] =  -1;
+    return 
+    }
+
+
+
+    }
+
  
 
 
 
+    }
+
+
+
+    public static void main(String...args){
+
+   int [] numbers = {10,12,33,45,6};
+
+    System.out.println(Arrays.toString(numbers)); 
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 }
-
-
-
-
-
-
-
-
