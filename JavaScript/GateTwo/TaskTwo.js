@@ -1,8 +1,11 @@
-for(let count = 1;count <= 10;count++){
+const prompt = require("prompt-sync")();
 
-console.log(count);
+let name = prompt("Enter your name: ");
+console.log("Hello " + name);
+
+ 
 
 
 
+const prompt = require("prompt-sync")();
 
-}
