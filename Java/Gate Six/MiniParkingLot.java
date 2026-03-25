@@ -30,7 +30,6 @@ public class MiniParkingLot {
 
             switch (choice) {
 
-
                 case 1 -> {
                     System.out.print("Enter slot (0 - 20): ");
                     int slot = input.nextInt();
