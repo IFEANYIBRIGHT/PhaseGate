@@ -2,28 +2,32 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class ContactApp{
 
-    public static void getContactNeeds (ArrayList <String> firstName,ArrayList <String> lastName,ArrayList <String> phoneNumber){
+    public static void ArrayList <String> getContactNeeds (){
     
     Scanner input = new Scanner(System.in);
+    
+     ArrayList <String> contactNeeds = new ArrayList<>();
+    
     System.out.println("What is ur first name ?");
     
-     String userFirstName = input.nextLine().toLowerCase();
+     String userFirstName = input.nextLine();
  
-     firstName.add(userFirstName);
+     contactNeeds.add(userFirstName);
     
      System.out.println("What is ur last name ?");
      
-      String userLastName = input.nextLine().toLowerCase();
-     lastName.add(userLastName);
+      String userLastName = input.nextLine();
+     contactNeeds.add(userLastName);
      
      System.out.println("Enter ur phone number ?");
      
      String userPhoneNumber = input.nextLine();
      
-        if(userPhoneNumber.length() <= 11 && userPhoneNumber.length() =< 11){
-             phoneNumber.add(userPhoneNumber);
-        }
- 
+       if(userPhoneNumber.matches("\\d{11}")) {
+    contactNeeds.add(userPhoneNumber);
+} else {
+    System.out.println("Invalid phone number");
+}
     
     
     

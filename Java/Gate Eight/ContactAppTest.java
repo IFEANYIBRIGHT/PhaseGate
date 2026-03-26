@@ -18,7 +18,7 @@ public class ContactAppTest{
     
      ArrayList <String> phoneNumber = "08131913381"; 
         
-     = contact.getContactNeeds("John","doe",phoneNumber);
+    ArrayList <String>  actual = contact.getContactNeeds("John","doe",phoneNumber);
     
     assertTrue(actual);
      
